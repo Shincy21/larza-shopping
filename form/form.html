@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // You can implement your authentication logic here.
+            // For this example, we'll use simple hardcoded values.
+            if (username === "user" && password === "password") {
+                alert("Login successful!");
+            } else {
+                alert("Login failed. Please check your username and password.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Login Page</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+        
+        <input type="button" value="Login" onclick="validateLogin()">
+    </form>
+</body>
+</html>
